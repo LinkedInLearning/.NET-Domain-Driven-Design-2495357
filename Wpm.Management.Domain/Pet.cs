@@ -9,6 +9,7 @@ public class Pet : Entity
     public string Color { get; init; }
     public Weight Weight { get; init; }
     public SexOfPet SexOfPet { get; init; }
+    public BreedId BreedId { get; set; }
     public Pet(Guid id,
                 string name,
                int age,

@@ -30,4 +30,24 @@ public class UnitTest1
         var wr2 = new WeightRange(10.5m, 20.5m);
         Assert.True(wr1 == wr2);
     }
+
+    [Fact]
+    public void BreedId_debe_ser_valido()
+    {
+        var breedService = new FakeBreedService();
+        var id = breedService.breeds[0].Id;
+        var breedId = new BreedId(id, breedService);
+        Assert.NotNull(breedId);
+    }
+
+    [Fact]
+    public void BreedId_no_debe_ser_valido()
+    {
+        var breedService = new FakeBreedService();
+        var id = Guid.NewGuid();
+        Assert.Throws<ArgumentException>(() =>
+        {
+            var breedId = new BreedId(id, breedService);
+        });
+    }
 }

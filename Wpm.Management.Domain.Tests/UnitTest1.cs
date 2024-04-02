@@ -20,4 +20,12 @@ public class UnitTest1
         var w2 = new Weight(20.5m);
         Assert.True(w1 == w2);
     }
+
+    [Fact]
+    public void RangoPeso_debe_ser_igual()
+    {
+        var wr1 = new WeightRange(10.5m, 20.5m);
+        var wr2 = new WeightRange(10.5m, 20.5m);
+        Assert.True(wr1 == wr2);
+    }
 }

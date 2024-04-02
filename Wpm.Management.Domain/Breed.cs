@@ -1,4 +1,6 @@
-﻿namespace Wpm.Management.Domain;
+﻿using Wpm.Management.Domain.ValueObjects;
+
+namespace Wpm.Management.Domain;
 public class Breed : Entity
 {
     public string Name { get; init; }
@@ -12,17 +14,5 @@ public class Breed : Entity
         Name = name;
         MaleIdealWeight = maleIdealWeight;
         FemaleIdealWeight = femaleIdealWeight;
-    }
-}
-
-public record WeightRange
-{
-    public decimal From { get; init; }
-    public decimal To { get; init; }
-
-    public WeightRange(decimal from, decimal to)
-    {
-        From = from;
-        To = to;
     }
 }

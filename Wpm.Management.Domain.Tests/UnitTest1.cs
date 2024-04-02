@@ -1,3 +1,5 @@
+using Wpm.Management.Domain.ValueObjects;
+
 namespace Wpm.Management.Domain.Tests;
 
 public class UnitTest1

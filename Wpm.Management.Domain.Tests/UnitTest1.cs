@@ -59,7 +59,7 @@ public class UnitTest1
         var breedService = new FakeBreedService();
         var breedId = new BreedId(breedService.breeds[0].Id, breedService);
         var pet = new Pet(Guid.NewGuid(), "Test", 10, "Color", SexOfPet.Male, breedId);
-        pet.SetWeight(new Weight(8.5m), breedService);
+        pet.SetWeight(8.5m, breedService);
         Assert.True(pet.WeightClass == WeightClass.Underweight);
     }
 
@@ -69,7 +69,7 @@ public class UnitTest1
         var breedService = new FakeBreedService();
         var breedId = new BreedId(breedService.breeds[0].Id, breedService);
         var pet = new Pet(Guid.NewGuid(), "Test", 10, "Color", SexOfPet.Male, breedId);
-        pet.SetWeight(new Weight(28.5m), breedService);
+        pet.SetWeight(28.5m, breedService);
         Assert.True(pet.WeightClass == WeightClass.Overweight);
     }
 
@@ -79,7 +79,7 @@ public class UnitTest1
         var breedService = new FakeBreedService();
         var breedId = new BreedId(breedService.breeds[0].Id, breedService);
         var pet = new Pet(Guid.NewGuid(), "Test", 10, "Color", SexOfPet.Male, breedId);
-        pet.SetWeight(new Weight(12.5m), breedService);
+        pet.SetWeight(12.5m, breedService);
         Assert.True(pet.WeightClass == WeightClass.Ideal);
     }
 }

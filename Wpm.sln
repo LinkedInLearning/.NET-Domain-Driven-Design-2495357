@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpm.Management.Domain", "Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpm.Management.Domain.Tests", "Wpm.Management.Domain.Tests\Wpm.Management.Domain.Tests.csproj", "{3B58776F-2484-4C77-A673-EBCABFEFEFAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpm.Clinic.Api", "Wpm.Clinic.Api\Wpm.Clinic.Api.csproj", "{5BEC1878-8587-485C-A252-04053727F6BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpm.Clinic.Domain", "Wpm.Clinic.Domain\Wpm.Clinic.Domain.csproj", "{D04ED9A7-25C8-4A23-A3B6-882E42E82D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpm.Clinic.Domain.Tests", "Wpm.Clinic.Domain.Tests\Wpm.Clinic.Domain.Tests.csproj", "{13A0DDE7-B378-488B-9198-EC9D03F70A84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,17 @@ Global
 		{3B58776F-2484-4C77-A673-EBCABFEFEFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B58776F-2484-4C77-A673-EBCABFEFEFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B58776F-2484-4C77-A673-EBCABFEFEFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEC1878-8587-485C-A252-04053727F6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEC1878-8587-485C-A252-04053727F6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEC1878-8587-485C-A252-04053727F6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEC1878-8587-485C-A252-04053727F6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04ED9A7-25C8-4A23-A3B6-882E42E82D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04ED9A7-25C8-4A23-A3B6-882E42E82D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04ED9A7-25C8-4A23-A3B6-882E42E82D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04ED9A7-25C8-4A23-A3B6-882E42E82D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A0DDE7-B378-488B-9198-EC9D03F70A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A0DDE7-B378-488B-9198-EC9D03F70A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A0DDE7-B378-488B-9198-EC9D03F70A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A0DDE7-B378-488B-9198-EC9D03F70A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

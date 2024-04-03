@@ -1,4 +1,4 @@
-﻿namespace Wpm.Management.Domain.Entities;
+﻿namespace Wpm.SharedKernel;
 public abstract class Entity : IEquatable<Entity>
 {
     public Guid Id { get; init; }
@@ -10,7 +10,7 @@ public abstract class Entity : IEquatable<Entity>
 
     public override bool Equals(object obj)
     {
-        return Equals(obj as Pet);
+        return Equals(obj as Entity);
     }
 
     public override int GetHashCode()

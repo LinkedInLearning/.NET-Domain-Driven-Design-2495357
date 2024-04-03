@@ -5,13 +5,15 @@ namespace Wpm.Clinic.Domain;
 
 public class Consultation : AggregateRoot
 {
+    private readonly List<DrugAdministration> administeredDrugs = new();
     public DateTime ConsultationStart { get; init; }
-    public DateTime? ConsultationEnd { get; set; }
+    public DateTime? ConsultationEnd { get; private set; }
     public PatientId PatientId { get; init; }
     public Text Diagnosis { get; private set; }
     public Text Treatment { get; private set; }
     public Weight CurrentWeight { get; private set; }
     public ConsultationStatus Status { get; private set; }
+    public IReadOnlyCollection<DrugAdministration> AdministeredDrugs => administeredDrugs;
 
     public Consultation(PatientId patientId)
     {
@@ -37,6 +39,13 @@ public class Consultation : AggregateRoot
     {
         ValidateConsultationStatus();
         Treatment = treatment;
+    }
+
+    public void AdministerDrug(DrugId drugId, Dose dose)
+    {
+        ValidateConsultationStatus();
+        var newDrugAdministration = new DrugAdministration(drugId, dose);
+        administeredDrugs.Add(newDrugAdministration);
     }
 
     public void End()

@@ -1,4 +1,6 @@
-﻿namespace Wpm.Management.Domain.ValueObjects;
+﻿using Wpm.Management.Domain.Services;
+
+namespace Wpm.Management.Domain.ValueObjects;
 public record BreedId
 {
     private readonly IBreedService breedService;

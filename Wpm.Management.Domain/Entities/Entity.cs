@@ -1,4 +1,4 @@
-﻿namespace Wpm.Management.Domain;
+﻿namespace Wpm.Management.Domain.Entities;
 public abstract class Entity : IEquatable<Entity>
 {
     public Guid Id { get; init; }

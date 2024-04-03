@@ -1,6 +1,7 @@
-﻿using Wpm.Management.Domain.ValueObjects;
+﻿using Wpm.Management.Domain.Entities;
+using Wpm.Management.Domain.ValueObjects;
 
-namespace Wpm.Management.Domain;
+namespace Wpm.Management.Domain.Services;
 public interface IBreedService
 {
     Breed? GetBreed(Guid id);

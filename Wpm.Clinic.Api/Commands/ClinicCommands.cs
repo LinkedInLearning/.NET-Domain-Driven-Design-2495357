@@ -1,5 +1,4 @@
-﻿using static Wpm.Clinic.Api.Commands.RegisterVitalSignsCommand;
-using static Wpm.Clinic.Domain.ValueObjects.Dose;
+﻿using static Wpm.Clinic.Domain.ValueObjects.Dose;
 
 namespace Wpm.Clinic.Api.Commands;
 

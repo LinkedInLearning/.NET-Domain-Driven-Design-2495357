@@ -23,6 +23,22 @@ public class ClinicController(ClinicApplicationService applicationService,
             return BadRequest();
         }
     }
+
+    [HttpPost("end")]
+    public async Task<ActionResult> Post(EndConsultationCommand command)
+    {
+        try
+        {
+            await applicationService.Handle(command);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex.Message);
+            return BadRequest();
+        }
+    }
+
     [HttpPut("diagnosis")]
     public async Task<ActionResult> Put(SetDiagnosisCommand command)
     {

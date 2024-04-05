@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Wpm.Clinic.Domain;
+using Wpm.Clinic.Domain.Entities;
 using Wpm.Clinic.Domain.ValueObjects;
 
 namespace Wpm.Clinic.Api.Infrastructure;

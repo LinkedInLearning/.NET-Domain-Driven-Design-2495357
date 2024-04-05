@@ -14,6 +14,16 @@ public record BreedId
         Value = value;
     }
 
+    private BreedId(Guid value)
+    {
+        Value = value;
+    }
+
+    public static BreedId Create(Guid value)
+    {
+        return new BreedId(value);
+    }
+
     private void ValidateBreed(Guid value)
     {
         if (breedService.GetBreed(value) == null)

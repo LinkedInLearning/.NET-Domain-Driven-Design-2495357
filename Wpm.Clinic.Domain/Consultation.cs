@@ -10,9 +10,9 @@ public class Consultation : AggregateRoot
     public DateTime ConsultationStart { get; init; }
     public DateTime? ConsultationEnd { get; private set; }
     public PatientId PatientId { get; init; }
-    public Text Diagnosis { get; private set; }
-    public Text Treatment { get; private set; }
-    public Weight CurrentWeight { get; private set; }
+    public Text? Diagnosis { get; private set; }
+    public Text? Treatment { get; private set; }
+    public Weight? CurrentWeight { get; private set; }
     public ConsultationStatus Status { get; private set; }
     public IReadOnlyCollection<DrugAdministration> AdministeredDrugs => administeredDrugs;
     public IReadOnlyCollection<VitalSigns> VitalSignReadings => vitalSignReadings;

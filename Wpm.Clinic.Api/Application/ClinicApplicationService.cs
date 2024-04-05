@@ -50,4 +50,15 @@ public class ClinicApplicationService(ClinicDbContext dbContext)
                         new Dose(command.Quantity, command.UnitOfMeasure));
         await dbContext.SaveChangesAsync();
     }
+
+    public async Task Handle(RegisterVitalSignsCommand command)
+    {
+        var consultation = await dbContext.Consultations.FindAsync(command.ConsultationId);
+        consultation.RegisterVitalSigns(command.VitalSignReadings
+                                               .Select(v => new VitalSigns(v.ReadingDateTime,
+                                                                           v.Temperature,
+                                                                           v.HeartRate,
+                                                                           v.RespiratoryRate)));
+        await dbContext.SaveChangesAsync();
+    }
 }

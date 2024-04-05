@@ -84,7 +84,7 @@ public class UnitTest1
     public void Consulta_agrega_lectura_signos_vitales()
     {
         var c = new Consultation(Guid.NewGuid());
-        IEnumerable<VitalSigns> vitalSigns = [new VitalSigns(38.8m, 100, 120)];
+        IEnumerable<VitalSigns> vitalSigns = [new VitalSigns(DateTime.UtcNow, 38.8m, 100, 120)];
         c.RegisterVitalSigns(vitalSigns);
         Assert.True(c.VitalSignReadings.Count == 1);
         Assert.True(c.VitalSignReadings.First() == vitalSigns.First());

@@ -26,12 +26,15 @@ public class ClinicDbContext(DbContextOptions options) : DbContext(options)
             
             consultation.OwnsMany(c => c.AdministeredDrugs, a =>
             {
-                a.WithOwner().HasForeignKey("ConsultationId"); // If you want to specify the FK
+                a.WithOwner().HasForeignKey("ConsultationId");
                 a.OwnsOne(d => d.DrugId);
                 a.OwnsOne(d => d.Dose);
             });
 
-            consultation.OwnsMany(c => c.VitalSignReadings);
+            consultation.OwnsMany(c => c.VitalSignReadings, v =>
+            {
+                v.WithOwner().HasForeignKey("ConsultationId");
+            });
         });
     }
 }

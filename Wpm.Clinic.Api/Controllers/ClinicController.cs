@@ -81,4 +81,20 @@ public class ClinicController(ClinicApplicationService applicationService,
             return BadRequest();
         }
     }
+
+
+    [HttpPut("registerVitalSigns")]
+    public async Task<ActionResult> Put(RegisterVitalSignsCommand command)
+    {
+        try
+        {
+            await applicationService.Handle(command);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex.Message);
+            return BadRequest();
+        }
+    }
 }

@@ -1,13 +1,12 @@
 # .NET: Domain-Driven Design práctico
 
-Este es el repositorio del curso de LinkedIn Learning `[nombre del curso]`. El curso completo está disponible en [LinkedIn Learning][lil-course-url].
+Este es el repositorio del curso de LinkedIn Learning `.NET: Domain-Driven Design práctico`. El curso completo está disponible en [LinkedIn Learning][lil-course-url].
 
 ![Nombre completo del curso][lil-thumbnail-url] 
 
 Consulta el archivo Readme en la rama main para obtener instrucciones e información actualizadas.
 
-
-DESCRIPCIÓN DEL CURSO
+Este curso está destinado a especialistas en desarrollo de .NET interesados en aplicar Domain-Driven Design (DDD) en sus proyectos. Es ideal para aquellos que buscan integrar las estrategias y herramientas de DDD en sus soluciones de desarrollo, así como para arquitectos de software y stakeholders de proyectos .NET que desean comprender cómo implementar DDD en sus iniciativas actuales o futuras. Aunque no es obligatorio, se recomienda haber completado previamente el curso de audio "Arquitectura de software: Domain-Driven Design" para una comprensión más profunda y efectiva de los conceptos y prácticas de DDD.
 
 ## Instrucciones
 

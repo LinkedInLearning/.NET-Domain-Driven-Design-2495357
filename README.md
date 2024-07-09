@@ -31,7 +31,7 @@ Las ramas están estructuradas para corresponder a los vídeos del curso. La con
 Echa un vistazo a mis otros cursos en [LinkedIn Learning](https://www.linkedin.com/learning/instructors/rodrigo-diaz-concha).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-course-url]: https://www.linkedin.com/learning/dot-net-domain-driven-design-practico
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQFPjQonqkkaqg/learning-public-crop_675_1200/0/1720521772729?e=2147483647&v=beta&t=58mlRZRXsNkldli8Y1p-ZICA8ZlXZQKAyumAwj2vJfQ
 
 [1]: # (End of ES-Instruction ###############################################################################################)
